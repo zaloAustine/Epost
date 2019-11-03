@@ -140,6 +140,18 @@ public class All_Post_Adapter extends RecyclerView.Adapter<All_Post_Adapter.View
        // setAnimation(holder.itemView, position);
         RightLeft(holder.itemView,position);
 
+        holder.comments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                k = item.get(position);
+                Intent i = new Intent(mcontext, ViewPost.class);
+                i.putExtra("id", k.getId());
+                i.putExtra("title", k.getTitle());
+                i.putExtra("body", k.getBody());
+                mcontext.startActivity(i);
+            }
+        });
+
     }
 
     @Override
@@ -149,7 +161,7 @@ public class All_Post_Adapter extends RecyclerView.Adapter<All_Post_Adapter.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
-        TextView title, body, createdat;
+        TextView title, body, createdat,comments;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -159,6 +171,7 @@ public class All_Post_Adapter extends RecyclerView.Adapter<All_Post_Adapter.View
             title = itemView.findViewById(R.id.title);
             body = itemView.findViewById(R.id.body);
             createdat = itemView.findViewById(R.id.createdat);
+            comments = itemView.findViewById(R.id.comments);
 
 
         }
