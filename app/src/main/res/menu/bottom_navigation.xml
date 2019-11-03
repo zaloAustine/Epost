@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/posts"
+        android:icon="@drawable/post"
+        android:title="posts"/>
+    <item
+        android:id="@+id/Add"
+        android:icon="@drawable/add"
+        android:title="Add Post"/>
+
+
+</menu>

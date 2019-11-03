@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+android:layout_margin="6dp"
+app:cardCornerRadius="8dp"
+android:layout_marginBottom="1dp"
+android:elevation="4dp"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/card"
+app:cardBackgroundColor="@android:color/white">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/cabin_sketch"
+            android:text="Title"
+            android:id="@+id/title"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/body"
+                android:text="body"
+                android:fontFamily="@font/cabin_sketch"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.like.LikeButton
+                android:layout_weight="5"
+                app:icon_type="star"
+                app:icon_size="15dp"
+                android:id="@+id/like_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/createdat"
+            android:text="body"
+            android:textSize="10sp"
+            android:fontFamily="@font/cabin_sketch"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.cardview.widget.CardView>
+
