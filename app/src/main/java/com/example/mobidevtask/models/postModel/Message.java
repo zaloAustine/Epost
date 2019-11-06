@@ -2,6 +2,9 @@ package com.example.mobidevtask.models.postModel;
 
 import java.util.List;
 
+import androidx.room.Entity;
+
+@Entity()
 public class Message {
     //https://rest-api.mobidev-sandbox.com/api/posts
 
@@ -30,5 +33,8 @@ public class Message {
 
     public void setData(List<com.example.mobidevtask.models.postModel.data> data) {
         this.data = data;
+    }
+    public void test(){
+        //branch test
     }
 }

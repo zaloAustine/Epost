@@ -121,7 +121,6 @@ public class Comment_Adapter extends RecyclerView.Adapter<Comment_Adapter.Commen
         });
 
         setAnimation(holder.itemView,position);
-        //RightLeft(holder.itemView,position);
 
     }
 
